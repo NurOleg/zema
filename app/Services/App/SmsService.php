@@ -16,10 +16,10 @@ class SmsService
      */
     public function sendCode(string $phone, string $code): string
     {
-        $jsonResponse = Http::get('http://api.sms-prosto.ru', [
+        $jsonResponse = Http::get(env('SMS_API_HOST'), [
             'method'      => 'push_msg',
             'format'      => 'json',
-            'key'         => 'dAc60940aa289fe6b64c0f40c60b1d918ea77ee57a33c4c0',
+            'key'         => env('SMS_API_KEY'),
             'text'        => 'Ваш проверочный код: ' . $code,
             'phone'       => $phone,
             'sender_name' => 'Сайт Зема.рф',
