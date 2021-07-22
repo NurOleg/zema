@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\App\AuthController;
+use App\Http\Controllers\App\UserController;
+use App\Http\Controllers\App\CityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +24,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/login', [AuthController::class, 'token']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/verify', [AuthController::class, 'verify']);
+
+Route::get('/users/{user}', [UserController::class, 'show']);
+Route::get('/users/{user}/edit', [UserController::class, 'edit']);
+Route::post('/users/{user}', [UserController::class, 'update']);
+
+//Route::resource('users', UserController::class);
+Route::resource('cities', CityController::class);

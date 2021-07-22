@@ -4,13 +4,33 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Storage;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable, HasApiTokens;
+    use HasFactory, Notifiable, HasApiTokens, SoftDeletes;
+
+    public const EDUCATION = [
+        'Нет',
+        'Среднее',
+        'Среднее специальное',
+        'Неоконченное высшее',
+        'Высшее',
+        'Бакалавр',
+        'Магистр',
+        'Кандидат наук',
+        'Доктор наук',
+    ];
+
+    public const GENDER = [
+        'Мужской',
+        'Женский',
+    ];
 
     /**
      * The attributes that are mass assignable.
@@ -23,6 +43,19 @@ class User extends Authenticatable
         'verified',
         'email',
         'password',
+        'education',
+        'help_needed',
+        'help_offer',
+        'areas_of_interest',
+        'career',
+        'age',
+        'name',
+        'surname',
+        'patronymic',
+        'gender',
+        'avatar',
+        'birth_city_id',
+        'current_city_id',
     ];
 
     /**
@@ -43,4 +76,28 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function current_city(): BelongsTo
+    {
+        return $this->belongsTo(City::class, 'current_city_id');
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function birth_city(): BelongsTo
+    {
+        return $this->belongsTo(City::class, 'birth_city_id');
+    }
+
+    /**
+     * @return string
+     */
+    public function getAvatarAttribute(): string
+    {
+        return Storage::disk('public')->url($this->attributes['avatar']);
+    }
 }
