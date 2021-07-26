@@ -66,7 +66,10 @@ final class AuthService
         $user->verified = true;
         $user->save();
 
-        return ['token' => $user->createToken($request->get('phone'))->plainTextToken];
+        return [
+            'token' => $user->createToken($request->get('phone'))->plainTextToken,
+            'user'  => $user
+        ];
     }
 
     /**
@@ -74,7 +77,7 @@ final class AuthService
      * @return array
      * @throws \Exception
      */
-    public function getToken(GetTokenRequest $request): array
+    public function login(GetTokenRequest $request): array
     {
         $user = User::wherePhone($request->get('phone'))->first();
 
@@ -82,6 +85,13 @@ final class AuthService
             throw new \Exception('Вы ещё не зарегестрированы либо ввели неправильные телефон/пароль.');
         }
 
-        return ['token' => $user->createToken($request->get('phone'))->plainTextToken];
+        //if (!$user->verified) {
+        //    throw new \Exception('Необходимо подтвердить свой номер телефона.');
+        //}
+
+        return [
+            'token' => $user->createToken($request->get('phone'))->plainTextToken,
+            'user'  => $user
+        ];
     }
 }

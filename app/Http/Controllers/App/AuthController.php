@@ -42,9 +42,9 @@ final class AuthController extends BaseAppController
      * @return JsonResponse
      * @throws \Exception
      */
-    public function token(GetTokenRequest $request)
+    public function login(GetTokenRequest $request)
     {
-        $token = $this->authService->getToken($request);
+        $token = $this->authService->login($request);
 
         return $this->successResponse($token, 'Добро пожаловать!');
     }
