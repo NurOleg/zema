@@ -34,7 +34,7 @@ final class AuthController extends BaseAppController
     {
         $result = $this->authService->register($request);
 
-        return $this->successResponse([], $result);
+        return $this->successResponse(['code' => $result], $result);
     }
 
     /**
