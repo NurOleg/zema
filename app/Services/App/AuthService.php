@@ -11,8 +11,15 @@ use Illuminate\Support\Facades\Hash;
 
 final class AuthService
 {
+    /**
+     * @var SmsService
+     */
     private SmsService $smsServive;
 
+    /**
+     * AuthService constructor.
+     * @param SmsService $smsService
+     */
     public function __construct(SmsService $smsService)
     {
         $this->smsServive = $smsService;
@@ -45,7 +52,9 @@ final class AuthService
 
         cache()->put($request->get('phone') . ':code', $code);
 
-        return $this->smsServive->sendCode($request->get('phone'), $code);
+        return $code;
+
+        //return $this->smsServive->sendCode($request->get('phone'), $code);
 
         //return $user->createToken($request->get('email'))->plainTextToken;
     }

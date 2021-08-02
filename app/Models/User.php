@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -78,6 +79,22 @@ class User extends Authenticatable
     ];
 
     /**
+     * @return BelongsToMany
+     */
+    public function friends(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'friends', 'user_id', 'friend_id');
+    }
+
+    /**
+     * @return BelongsToMany
+     */
+    public function friend_requests(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'friend_requests', 'requested_friend_id', 'user_id');
+    }
+
+    /**
      * @return BelongsTo
      */
     public function current_city(): BelongsTo
@@ -99,5 +116,13 @@ class User extends Authenticatable
     public function getAvatarAttribute(): string
     {
         return Storage::disk('public')->url($this->attributes['avatar']);
+    }
+
+    /**
+     * @return string
+     */
+    public function getFullNameAttribute(): string
+    {
+        return $this->attributes['surname'] . ' ' . $this->attributes['name'];
     }
 }
