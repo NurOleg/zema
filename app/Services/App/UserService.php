@@ -47,6 +47,8 @@ final class UserService
 
         $user->update(array_merge($request->validated(), $avatar));
 
+        $user->load(['current_city', 'birth_city']);
+
         return ['user' => $user];
     }
 
