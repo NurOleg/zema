@@ -32,7 +32,7 @@ final class UserService
     public function update(UpdateUserRequest $request, User $user): array
     {
         $avatar = [];
-        $avatarUploaded = $request->file('avatar');
+        $avatarUploaded = $request->file('avatar', null);
 
         if ($avatarUploaded !== null) {
             /** @var UploadedFile $avatarUploaded */
