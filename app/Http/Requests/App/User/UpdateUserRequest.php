@@ -27,7 +27,7 @@ class UpdateUserRequest extends FormRequest
         return [
             'avatar'            => 'image|nullable',
             'name'              => 'string|required',
-            'phone'             => 'string|regex:/(7)[0-9]{9}/',
+            //'phone'             => 'string|regex:/(7)[0-9]{9}/',
             'education'         => 'string|nullable|in:' . implode(',', User::EDUCATION),
             'help_needed'       => 'string|nullable',
             'help_offer'        => 'string|nullable',
@@ -49,5 +49,19 @@ class UpdateUserRequest extends FormRequest
     {
         $json = $this->get('data');
         return array_merge(json_decode($json, true), $this->allFiles());
+    }
+
+    /**
+     * @return string[]
+     */
+    public function messages(): array
+    {
+        return [
+            'string'   => 'The :attribute must be a string.',
+            'required' => 'The :attribute is required.',
+            'image'    => 'The :attribute must be an image.',
+            'numeric'  => 'The :attribute must be a numeric.',
+            'in'       => 'The :attribute must be one of the following types: :values',
+        ];
     }
 }
