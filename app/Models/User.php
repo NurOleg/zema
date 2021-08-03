@@ -111,11 +111,13 @@ class User extends Authenticatable
     }
 
     /**
-     * @return string
+     * @return ?string
      */
-    public function getAvatarAttribute(): string
+    public function getAvatarAttribute(): ?string
     {
-        return Storage::disk('public')->url($this->attributes['avatar']);
+        return !empty($this->attributes['avatar'])
+            ? Storage::disk('public')->url($this->attributes['avatar'])
+            : null;
     }
 
     /**
