@@ -6,6 +6,7 @@ use App\Http\Controllers\App\AuthController;
 use App\Http\Controllers\App\UserController;
 use App\Http\Controllers\App\CityController;
 use App\Http\Controllers\App\FriendshipController;
+use App\Http\Controllers\App\PublicationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,7 @@ Route::post('/users/{user}', [UserController::class, 'update']);
 
 //Route::resource('users', UserController::class);
 Route::resource('cities', CityController::class);
+Route::resource('publications', PublicationController::class);
 
 Route::get('/{user}/friendship/requests', [FriendshipController::class, 'requests']);
 Route::post('/{user}/friendship/request', [FriendshipController::class, 'addRequest']);
