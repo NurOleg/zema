@@ -24,11 +24,11 @@ class ListFriendsRequest extends FormRequest
     public function rules()
     {
         return [
-            'friends_for_user_id' => 'numeric',
-            'birth_city_id'       => 'numeric',
-            'current_city_id'     => 'numeric',
-            'age_from'            => 'numeric',
-            'age_to'              => 'numeric',
+            'friends_for_user_id' => 'string|nullable',
+            'birth_city_id'       => 'string|nullable',
+            'current_city_id'     => 'string|nullable',
+            'age_from'            => 'string|nullable',
+            'age_to'              => 'string|nullable',
         ];
     }
 }

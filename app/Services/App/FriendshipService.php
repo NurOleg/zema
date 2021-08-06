@@ -69,8 +69,7 @@ final class FriendshipService
      */
     public function getRequests(User $user): array
     {
-        $user->load('friend_requests');
-        $requests = $user->friend_requests;
+        $requests = FriendRequest::with('user')->where('requested_friend_id', $user->id)->get();
 
         return ['friend_requests' => $requests];
     }
