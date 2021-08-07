@@ -45,17 +45,20 @@ final class UserService
     public function update(UpdateUserRequest $request, User $user): array
     {
         $avatar = [];
-        $avatarUploaded = $this->imageService->makeFromBase64($request->get('avatar'));
 
-        if ($avatarUploaded !== null) {
+        if (!str_contains($request->get('avatar'), 'user/avatars')) {
+            $avatarUploaded = $this->imageService->makeFromBase64($request->get('avatar'));
 
-            $avatarPath = '/user/avatars/' . $user->id . '/' . $avatarUploaded->getClientOriginalName();
+            if ($avatarUploaded !== null) {
 
-            if (!Storage::disk('public')->put($avatarPath, $avatarUploaded->getContent())) {
-                throw new \Exception('Не удалось загрузить фото.');
+                $avatarPath = '/user/avatars/' . $user->id . '/' . $avatarUploaded->getClientOriginalName();
+
+                if (!Storage::disk('public')->put($avatarPath, $avatarUploaded->getContent())) {
+                    throw new \Exception('Не удалось загрузить фото.');
+                }
+
+                $avatar['avatar'] = $avatarPath;
             }
-
-            $avatar['avatar'] = $avatarPath;
         }
 
         $user->update(array_merge($request->validated(), $avatar));
