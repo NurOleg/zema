@@ -42,14 +42,14 @@ class UpdateUserRequest extends FormRequest
         ];
     }
 
-    /**
-     * @return array
-     */
-    public function validationData(): array
-    {
-        $json = $this->get('data');
-        return array_merge(json_decode($json, true), $this->allFiles());
-    }
+    ///**
+    // * @return array
+    // */
+    //public function validationData(): array
+    //{
+    //    $json = $this->get('data');
+    //    return array_merge(json_decode($json, true), $this->allFiles());
+    //}
 
     /**
      * @return string[]

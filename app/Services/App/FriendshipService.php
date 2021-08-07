@@ -84,19 +84,19 @@ final class FriendshipService
     {
         $requestedFriendId = $request->get('requested_friend_id');
 
-        if($requestedFriendId === $user->id) {
+        if ($requestedFriendId === $user->id) {
             throw new \Exception('Нельзя дружить с самим собой.');
         }
 
         if (FriendRequest::where([
-            'user_id' => $user->id,
+            'user_id'             => $user->id,
             'requested_friend_id' => $requestedFriendId
         ])->exists()) {
             throw new \Exception('Запрос в друзья между этими пользователями уже существует.');
         }
 
         if (Friend::where([
-            'user_id' => $user->id,
+            'user_id'   => $user->id,
             'friend_id' => $requestedFriendId
         ])->exists()) {
             throw new \Exception('Нельзя отправить запрос, т.к. вы уже друзья.');
