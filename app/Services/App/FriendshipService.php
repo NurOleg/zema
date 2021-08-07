@@ -84,6 +84,10 @@ final class FriendshipService
     {
         $requestedFriendId = $request->get('requested_friend_id');
 
+        if($requestedFriendId === $user->id) {
+            throw new \Exception('Нельзя дружить с самим собой.');
+        }
+
         if (FriendRequest::where([
             'user_id' => $user->id,
             'requested_friend_id' => $requestedFriendId
