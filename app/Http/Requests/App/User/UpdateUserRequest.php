@@ -25,7 +25,7 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'avatar'            => 'string',
+            'avatar'            => 'string|nullable',
             'name'              => 'string|required',
             //'phone'             => 'string|regex:/(7)[0-9]{9}/',
             'education'         => 'string|nullable|in:' . implode(',', User::EDUCATION),
