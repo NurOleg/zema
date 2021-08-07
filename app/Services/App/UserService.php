@@ -11,6 +11,19 @@ use Illuminate\Support\Facades\Storage;
 
 final class UserService
 {
+    /**
+     * @var ImageService
+     */
+    protected ImageService $imageService;
+
+    /**
+     * UserService constructor.
+     * @param ImageService $imageService
+     */
+    public function __construct(ImageService $imageService)
+    {
+        $this->imageService = $imageService;
+    }
 
     /**
      * @param User $user
@@ -32,10 +45,10 @@ final class UserService
     public function update(UpdateUserRequest $request, User $user): array
     {
         $avatar = [];
-        $avatarUploaded = $request->file('avatar', null);
+        $avatarUploaded = $this->imageService->makeFromBase64($request->get('avatar'));
 
         if ($avatarUploaded !== null) {
-            /** @var UploadedFile $avatarUploaded */
+
             $avatarPath = '/user/avatars/' . $user->id . '/' . $avatarUploaded->getClientOriginalName();
 
             if (!Storage::disk('public')->put($avatarPath, $avatarUploaded->getContent())) {

@@ -68,6 +68,7 @@ final class FriendshipController extends BaseAppController
      * @param NewFriendshipRequest $request
      * @param User $user
      * @return JsonResponse
+     * @throws \Exception
      */
     public function addRequest(NewFriendshipRequest $request, User $user): JsonResponse
     {

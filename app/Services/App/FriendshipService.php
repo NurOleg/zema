@@ -78,9 +78,26 @@ final class FriendshipService
      * @param NewFriendshipRequest $request
      * @param User $user
      * @return array
+     * @throws \Exception
      */
     public function addRequest(NewFriendshipRequest $request, User $user): array
     {
+        $requestedFriendId = $request->get('requested_friend_id');
+
+        if (FriendRequest::where([
+            'user_id' => $user->id,
+            'requested_friend_id' => $requestedFriendId
+        ])->exists()) {
+            throw new \Exception('Запрос в друзья между этими пользователями уже существует.');
+        }
+
+        if (Friend::where([
+            'user_id' => $user->id,
+            'friend_id' => $requestedFriendId
+        ])->exists()) {
+            throw new \Exception('Нельзя отправить запрос, т.к. вы уже друзья.');
+        }
+
         $friendRequest = FriendRequest::create([
             'user_id'             => $user->id, // юзер, который запрашивает дружбу
             'requested_friend_id' => $request->get('requested_friend_id') // юзер, которому приходит запрос в друзья
