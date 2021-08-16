@@ -7,8 +7,11 @@ namespace App\Services\App;
 use App\Http\Requests\App\Publication\ListPublicationRequest;
 use App\Http\Requests\App\Publication\StorePublicationRequest;
 use App\Http\Requests\App\Publication\UpdatePublicationRequest;
+use App\Models\File;
 use App\Models\Friend;
 use App\Models\Publication;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 
 final class PublicationService
 {
@@ -42,6 +45,28 @@ final class PublicationService
     public function store(StorePublicationRequest $request): array
     {
         $publication = Publication::create($request->validated());
+
+        $uploadedFiles = [];
+
+        if ($request->filled('files')) {
+            foreach ($request->get('files') as $file) {
+                /** @var UploadedFile $file */
+                $filePath = '/publications/' . $publication->id . '/' . $file->getClientOriginalName();
+
+                if (!Storage::disk('public')->put($filePath, $file->getContent())) {
+                    throw new \Exception('Не удалось загрузить файл.');
+                }
+
+                $uploadedFiles[] = new File([
+                    'path' => $filePath,
+                    'type' => $file->getMimeType()
+                ]);
+            }
+
+            $publication->files()->saveMany($uploadedFiles);
+        }
+
+        $publication->load(['files']);
 
         return ['publication' => $publication];
     }

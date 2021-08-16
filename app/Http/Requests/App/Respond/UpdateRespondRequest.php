@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Requests\App\Publication;
+namespace App\Http\Requests\App\Respond;
 
+use App\Models\Respond;
 use Illuminate\Foundation\Http\FormRequest;
 
-class BasePublicationRequest extends FormRequest
+class UpdateRespondRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +25,7 @@ class BasePublicationRequest extends FormRequest
     public function rules()
     {
         return [
-            'content' => 'string',
-            'files'   => 'array',
-            'user_id' => 'numeric',
+            'status' => 'numeric|required|in:' . implode(',', array_keys(Respond::STATUSES)),
         ];
     }
 }

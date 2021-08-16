@@ -1,0 +1,815 @@
+<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><ns5:getHistoryResponse xmlns:ns3=
+\"http://argustelecom.ru/model/rms\" xmlns:ns5=\"http://argustelecom.ru/rtgate/spvs\"
+xmlns:rs=\"http://argustelecom.ru/model/resource\" xmlns:tns=\"http://argustelecom.ru/model/base\">
+<ns5:HistoryRecords>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.571+03:00</AddingDate>
+        <ActionType>Создан инцидент</ActionType>
+        <CommentText>CRM-101341181:\nСоздан инцидент\nCRM-101341181; \nКС: 08.05.2021 22:44 (+03:00); Значение SLA
+            продиктовано внешней системой; \nЗадача: 1ЛТП. Регистрация и диагностика инцидента; Исполнитель:Амдокс А.А.;
+            Участок:Интеграция CRM; Примечание: Тип услуги CRM:T0000000(db000000)deflt~0000328;Услуга
+            CRM:6259197#7696533#1;; Приоритет процесса: 7 Приоритет изменен согласно Заданию CRM;
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.677+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nVL00ZLNTOA - Зеленцова Ольга Александровна (Центр обработки обращений РП Универсал
+            (В2В)): Предпочтительное время связи 10:00-18:00 Линия свободна\nПер. напряжение: Норма 0,045 0,059 0,014
+            V\nПост. напряжение: Не норма -30,760 -30,390 -0,374 V\nИзоляция: Не норма 10000 10000 0 kOm\nЕмкость:
+            Вероятен обрыв 0 0 0 mkF\n\nВремя измерения: 8 мая 2021 г. 10:40:12\nтишина, мини атс нет, та проверяли,
+            визуально проводка в норме, но рядом идут дорожные работы, техни свой есть, доступ свободный, режим с 10:00
+            до 18:00, 9062742217 Надежда
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.683+03:00</AddingDate>
+        <ActionType>Добавлен контакт</ActionType>
+        <CommentText>CRM-101341181:\nДобавлен контакт\n9818358668;Время для связи: c 10:00 до 18:00;</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.687+03:00</AddingDate>
+        <ActionType>Вычисление параметров SLA</ActionType>
+        <CommentText>CRM-101341181:\nВычисление параметров SLA\nПараметр 'Макросегмент' получен в некорректном виде и
+            ему присвоено значение 'Не определено'. Проверьте настройки справочников!
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.690+03:00</AddingDate>
+        <ActionType>Добавлены SLA параметры</ActionType>
+        <CommentText>CRM-101341181:\nДобавлены SLA параметры\nПараметры SLA: Макросегмент: Не определено\nСегмент:
+            СМП\nПодсегмент: Не определено\nКласс обслуживания: Бронзовый\nСтепень влияния: Недоступна (отказ в
+            обслуживании)\nТип нас. пункта: К1: населенные пункты с населением >750 тыс. чел.\nТип Услуги:
+            ОТА\nСемейство технологии: Медь\nПриоритет: 7
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:07.694+03:00</AddingDate>
+        <ActionType>Задача завершена</ActionType>
+        <CommentText>CRM-101341181:\nЗадача завершена\nЗадача: 1ЛТП. Регистрация и диагностика инцидента; Длительность:
+            0 сек.; \nРешение: Передать в диагностику КДГ; Решение \"Создан наряд КДГ?\": Да;
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-08T10:45:08.060+03:00</AddingDate>
+        <ActionType>Создан наряд</ActionType>
+        <CommentText>ЛИН-17243403:\nСоздан наряд\n\nЛИН-17243403; \nЗадача: 1ЛТП.Согласование времени визита;
+            Участок:ОЦО_ГПП СЗФ; КС задачи:08.05.2021 11:15 (+03:00); \nЗадача: 1ЛТП.Согласование времени визита;
+            Исполнитель:Амдокс А.А.; Участок:Интеграция CRM; КС задачи:08.05.2021 11:15 (+03:00); \nЗадача:
+            3ЛТП.Линейный наряд; Участок:ХТ-04_УСТП №1 ЮЛ Чапыгина; КС задачи:08.05.2021 20:15 (+03:00); Приоритет
+            процесса: 7 Согласно приоритету инцидента CRM-101341181; Время визита: 08.05.2021 с 13:00 до 16:00 (+03:00)
+            Устраивающее абонента ожидание визита;
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-08T10:45:08.070+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nЭтаж:\nЛиния свободна\nПер. напряжение: Норма 0,045 0,059 0,014 V\nПост. напряжение:
+            Не норма -30,760 -30,390 -0,374 V\nИзоляция: Не норма 10000 10000 0 kOm\nЕмкость: Вероятен обрыв 0 0 0
+            mkF\n\nВремя измерения: 8 мая 2021 г. 10:40:12\nтишина, мини атс нет, та проверяли, визуально проводка в
+            норме, но рядом идут дорожные работы, техни свой есть, доступ свободный, режим с 10:00 до 18:00, 9062742217
+            Надежда
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-08T10:45:08.217+03:00</AddingDate>
+        <ActionType>Вычисление OLA</ActionType>
+        <CommentText>CRM-101341181:\nВычисление OLA\nДля роли \"ТП1.3\" не найдено правило OLA со способом расчета
+            \"Отсутствует\". Расчет по значениям КС OLA произведен по умолчанию
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-08T10:45:08.245+03:00</AddingDate>
+        <ActionType>Задача завершена</ActionType>
+        <CommentText>ЛИН-17243403:\nЗадача завершена\nЗадача: 1ЛТП.Согласование времени визита; Длительность: 0 сек.;
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Амдокс А.А.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-08T11:45:31.219+03:00</AddingDate>
+        <ActionType>Задача назначена</ActionType>
+        <CommentText>ЛИН-17243403:\nЗадача назначена\nЗадача: 3ЛТП.Линейный наряд; Исполнитель:Порядкин А.А.;
+            Участок:ХТ-04_УСТП №1 ЮЛ Чапыгина; КС задачи:08.05.2021 20:15 (+03:00);
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Лямаева Л.В.(УСК №4 СЦ ГЦТЭТ МРФ)</AuthorName>
+        <AuthorTelephoneNumber>+79312670629</AuthorTelephoneNumber>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-11T15:14:46.748+03:00</AddingDate>
+        <ActionType>Задача назначена</ActionType>
+        <CommentText>ЛИН-17243403:\nЗадача назначена\nЗадача: 3ЛТП.Линейный наряд; Исполнитель:Тест Т.Т.;
+            Участок:ХТ-04_УСТП №1 ЮЛ Чапыгина; КС задачи:08.05.2021 20:15 (+03:00);
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Техподдержка Аргус -.(АДМ)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-11T15:56:28.481+03:00</AddingDate>
+        <ActionType>Задача просмотрена</ActionType>
+        <CommentText>ЛИН-17243403:\nЗадача просмотрена\nЗадача была просмотрена пользователем Тестовый_Цифровой Т.Т.
+            через ЕЦМ МАРМ
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:26:26.133+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:27:59.514+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:28:36.813+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:28:48.406+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:29:07.733+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:30:23.478+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:30:46.252+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:43:21.309+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:45:21.152+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T18:48:14.113+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:49:14.571+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T18:49:38.017+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-26T19:02:24.687+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T19:02:52.077+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 877434785 \"Убедитесь что были выполнены
+            измерения параметров линии. Закрыть наряд можно в течении 5 минут после измерения.\" было успешно выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-26T20:01:43.489+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-27T10:58:50.072+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T10:59:56.402+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T12:17:24.715+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-27T12:17:40.798+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T12:18:26.028+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T12:23:10.963+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-27T12:23:18.807+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T12:23:51.055+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-05-27T17:44:43.263+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.180+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210515_104936_716.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.207+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210515_172740_075.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.246+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ 20210428_163346.jpg</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.265+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\n��ест Т.Т. добавил документ IMG_20210515_151832_062.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.319+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210515_144729_223.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.504+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ 20210426_222725.jpg</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.543+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210516_075345_426.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.639+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210513_125322_681.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.641+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210515_204445_092.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.710+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210516_192214_196.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:06.805+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ IMG_20210511_144616_025.jpg
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-05-31T16:06:07.022+03:00</AddingDate>
+        <ActionType>Добавлен документ</ActionType>
+        <CommentText>ЛИН-17243403:\nДобавлен документ\nТест Т.Т. добавил документ 20210428_163326.jpg</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T09:25:22.779+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T09:42:02.742+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T12:53:44.965+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T14:22:36.897+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-06-01T14:53:11.662+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T14:55:56.763+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T14:56:10.138+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T15:36:35.029+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:39:35.301+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:44:38.797+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:47:11.981+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:47:20.155+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:47:32.931+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:47:40.377+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T18:47:47.092+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-01T19:40:14.671+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-02T09:16:29.885+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-02T18:33:14.004+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-06-03T14:04:38.988+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-04T16:08:58.344+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-07T14:04:58.497+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тест Т.Т. запустил процесс измерения услуги
+            VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-06-08T18:38:29.915+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nКОММЕНТАРИЙ ИЗ ИНЦИДЕНТА</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Рти М.М.(РТИ)</AuthorName>
+        <AuthorTelephoneNumber>+79588593797</AuthorTelephoneNumber>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-06-08T18:39:52.005+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nКОММЕНТАРИЙ ИЗ ИНЦИДЕНТА +</CommentText>
+        <WithNotification>true</WithNotification>
+        <AuthorName>Рт�� М.М.(РТИ)</AuthorName>
+        <AuthorTelephoneNumber>+79588593797</AuthorTelephoneNumber>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-21T18:52:47.423+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nСкорость скачивания/загрузки Wi-Fi = 43.2 Мбит/с / 53.7 Мбит/с</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Тестовый_Цифровой Т.Т.(УИ №3 МРФ)</AuthorName>
+        <AuthorTelephoneNumber>79523735199</AuthorTelephoneNumber>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-06-25T15:30:37.061+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-26T00:16:52.689+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nтест пуш</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Техподдержка Аргус -.(АДМ)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-06-26T00:26:09.867+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nтест пуш</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Техподдержка Аргус -.(АДМ)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-07-07T16:13:58.755+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тестовый_Цифровой Т.Т. запустил процесс измерения
+            услуги VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-07-07T16:14:27.661+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>CRM-101341181</OrderNumber>
+        <AddingDate>2021-07-07T16:14:54.461+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>CRM-101341181:\nПравило закрытия нарядов 3ЛТП ИД: 1 \"Правило по умолчанию\" было успешно
+            выполнено
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-07-16T12:42:05.527+03:00</AddingDate>
+        <ActionType>Измерение услуги</ActionType>
+        <CommentText>ЛИН-17243403:\nИзмерение услуги\nПользователь Тестовый_Цифровой Т.Т. запустил процесс измерения
+            услуги VoIP8124981618.
+        </CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Цифровой_Монтажник И.(Интеграционные пользователи)</AuthorName>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-07-16T12:44:02.162+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nСкорость скачивания/загрузки Wi-Fi = 7.4 Мбит/с / 15.2 Мбит/с</CommentText>
+        <WithNotification>false</WithNotification>
+        <AuthorName>Тестовый_Цифровой Т.Т.(УИ №3 МРФ)</AuthorName>
+        <AuthorTelephoneNumber>79523735199</AuthorTelephoneNumber>
+    </HistoryRecord>
+    <HistoryRecord>
+        <OrderNumber>ЛИН-17243403</OrderNumber>
+        <AddingDate>2021-07-16T12:46:36.988+03:00</AddingDate>
+        <ActionType>Добавлен комментарий</ActionType>
+        <CommentText>ЛИН-17243403:\nq1_,:()!?</CommentText>
+        <WithNotification>true</WithNotification>
+        <AuthorName>Тестовый_Цифровой Т.Т.(УИ №3 МРФ)</AuthorName>
+        <AuthorTelephoneNumber>79523735199</AuthorTelephoneNumber>
+    </HistoryRecord>
+</ns5:HistoryRecords>
+</ns5:getHistoryResponse></soap:Body></soap:Envelope>
