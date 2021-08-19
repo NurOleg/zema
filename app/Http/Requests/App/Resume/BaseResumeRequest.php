@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests\App\Respond;
+namespace App\Http\Requests\App\Resume;
 
-use App\Models\Respond;
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRespondRequest extends FormRequest
+class BaseResumeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,10 +24,12 @@ class StoreRespondRequest extends FormRequest
     public function rules()
     {
         return [
-            'vacancy_id' => 'numeric',
-            'resume_id'  => 'numeric',
-            'letter'     => 'string|nullable',
-            'status'     => 'string|required|in:' . implode(',', array_keys(Respond::STATUSES)),
+            'position'           => 'string',
+            'experience'         => 'string|nullable',
+            'salary'             => 'numeric|nullable',
+            'category_id'        => 'numeric',
+            'employment_type_id' => 'numeric',
+            'user_id'            => 'numeric',
         ];
     }
 }

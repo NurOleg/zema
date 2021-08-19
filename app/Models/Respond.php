@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Respond extends Model
 {
@@ -19,7 +20,30 @@ class Respond extends Model
 
     public const STATUSES = [
         self::STATUS_DONT_LOOKED => self::STATUS_DONT_LOOKED_NAME,
-        self::STATUS_ACCEPTED => self::STATUS_ACCEPTED_NAME,
-        self::STATUS_REJECTED => self::STATUS_REJECTED_NAME,
+        self::STATUS_ACCEPTED    => self::STATUS_ACCEPTED_NAME,
+        self::STATUS_REJECTED    => self::STATUS_REJECTED_NAME,
     ];
+
+    protected $fillable = [
+        'resume_id',
+        'vacancy_id',
+        'letter',
+        'status'
+    ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function resume(): BelongsTo
+    {
+        return $this->belongsTo(Resume::class);
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function vacancy(): BelongsTo
+    {
+        return $this->belongsTo(Vacancy::class);
+    }
 }

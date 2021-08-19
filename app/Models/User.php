@@ -120,6 +120,14 @@ class User extends Authenticatable
     }
 
     /**
+     * @return HasMany
+     */
+    public function resumes(): HasMany
+    {
+        return $this->hasMany(Resume::class);
+    }
+
+    /**
      * @return ?string
      */
     public function getAvatarAttribute(): ?string
