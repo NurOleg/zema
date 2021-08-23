@@ -14,6 +14,7 @@ use App\Models\EmploymentType;
 use App\Models\Experience;
 use App\Models\Resume;
 use App\Models\Vacancy;
+use Illuminate\Database\Eloquent\Builder;
 
 final class VacancyService
 {
@@ -26,27 +27,41 @@ final class VacancyService
     {
         $vacancyQuery = Vacancy::query();
 
-        if ($listVacancyRequest->filled('salary')) {
-            $salaryWanted = $listVacancyRequest->get('salary');
-            $vacancyQuery->whereRaw('? between salary_from and salary_to', $salaryWanted)
-                ->orWhere('salary_from', '=<', $salaryWanted)
-                ->orWhere('salary_to', '>=', $salaryWanted);
-        }
-
         if ($listVacancyRequest->filled('category_id')) {
-            $vacancyQuery->where('category_id', $listVacancyRequest->get('category_id'));
+            $vacancyQuery->whereHas('category', function (Builder $q) use ($listVacancyRequest) {
+                $q->where('id', $listVacancyRequest->get('category_id'));
+            });
         }
 
         if ($listVacancyRequest->filled('employment_type_id')) {
-            $vacancyQuery->where('employment_type_id', $listVacancyRequest->get('employment_type_id'));
+            $vacancyQuery->whereHas('employment_type', function (Builder $q) use ($listVacancyRequest) {
+                $q->where('id', $listVacancyRequest->get('employment_type_id'));
+            });
         }
 
         if ($listVacancyRequest->filled('experience_id')) {
-            $vacancyQuery->where('experience_id', $listVacancyRequest->get('experience_id'));
+            $vacancyQuery->whereHas('experience', function (Builder $q) use ($listVacancyRequest) {
+                $q->where('id', $listVacancyRequest->get('experience_id'));
+            });
         }
 
         if ($listVacancyRequest->filled('city_id')) {
-            $vacancyQuery->where('city_id', $listVacancyRequest->get('city_id'));
+            $vacancyQuery->whereHas('city', function (Builder $q) use ($listVacancyRequest) {
+                $q->where('id', $listVacancyRequest->get('city_id'));
+            });
+        }
+
+        if ($listVacancyRequest->filled('salary')) {
+            $salaryWanted = $listVacancyRequest->get('salary');
+
+            $vq = Vacancy::query();
+
+            $ids = $vq->whereRaw('? between salary_from and salary_to', $salaryWanted)
+                ->orWhere('salary_from', '=<', $salaryWanted)
+                ->orWhere('salary_to', '>=', $salaryWanted)
+            ->get('id');
+
+            $vacancyQuery->whereIn('id', $ids);
         }
 
         $vacancies = $vacancyQuery->get();

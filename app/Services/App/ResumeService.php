@@ -29,6 +29,8 @@ final class ResumeService
     {
         $resume = Resume::create($request->validated());
 
+        $resume->load('user');
+
         return ['resume' => $resume];
     }
 

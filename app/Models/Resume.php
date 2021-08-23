@@ -16,6 +16,8 @@ class Resume extends Model
         'experience',
         'salary',
         'category_id',
+        'employment_type_id',
+        'user_id',
     ];
 
     /**
