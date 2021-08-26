@@ -17,7 +17,7 @@ class CreateFilesTable extends Migration
             $table->id();
             $table->string('type');
             $table->string('path');
-            $table->morphs('imagable');
+            $table->morphs('fileable');
         });
     }
 

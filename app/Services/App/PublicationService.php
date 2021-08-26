@@ -48,8 +48,8 @@ final class PublicationService
 
         $uploadedFiles = [];
 
-        if ($request->filled('files')) {
-            foreach ($request->get('files') as $file) {
+        if ($request->has('files')) {
+            foreach ($request->allFiles()['files'] as $file) {
                 /** @var UploadedFile $file */
                 $filePath = '/publications/' . $publication->id . '/' . $file->getClientOriginalName();
 
