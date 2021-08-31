@@ -33,7 +33,7 @@ final class PublicationService
         }
 
         $publications = $publicationsQuery->get();
-        $publications->load(['user']);
+        $publications->load(['user', 'files']);
 
         return ['publications' => $publications];
     }
@@ -100,7 +100,7 @@ final class PublicationService
      */
     public function show(Publication $publication): array
     {
-        $publication->load(['user']);
+        $publication->load(['user', 'files']);
 
         return ['publication' => $publication];
     }

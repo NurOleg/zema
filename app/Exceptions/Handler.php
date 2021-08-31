@@ -2,9 +2,13 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
+use Illuminate\Http\Response;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -42,29 +46,40 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * @param \Illuminate\Http\Request $request
+     * @param Request $request
      * @param Throwable $exception
-     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response|Response
+     * @return JsonResponse|Response|SymfonyResponse
      * @throws Throwable
      */
     public function render($request, Throwable $exception)
     {
         if ($exception && $request->wantsJson()) {
 
+            $data = [
+                'status'  => 'error',
+                'message' => null,
+                'data'    => null
+            ];
+
             if ($exception instanceof ValidationException) {
-                return response()->json([
-                    'status'  => 'error',
-                    'message' => 'Validation incorrect',
-                    'errors' => $exception->validator->getMessageBag(),
-                    'data' => null
-                ], 422);
+                return response()->json(
+                    array_merge($data, [
+                        'message' => 'Validation incorrect',
+                        'errors'  => $exception->validator->getMessageBag()
+                    ]), 422);
             }
 
-            return response()->json([
-                'status'  => 'error',
-                'message' => $exception->getMessage(),
-                'data'    => null
-            ], $this->isHttpException($exception) ? $exception->getStatusCode() : Response::HTTP_INTERNAL_SERVER_ERROR);
+            if ($exception instanceof ModelNotFoundException) {
+                return response()->json(
+                    array_merge($data, [
+                        'message' => 'Данные не найдены или были удалены.'
+                    ]), Response::HTTP_NOT_FOUND);
+            }
+
+            return response()->json(
+                array_merge($data, [
+                    'message' => $exception->getMessage()
+                ]), $this->isHttpException($exception) ? $exception->getStatusCode() : Response::HTTP_INTERNAL_SERVER_ERROR);
         }
 
         return parent::render($request, $exception);
